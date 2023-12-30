@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Placement Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+        *{
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+}
+html,body{
+    font-family: roboto,sans-serif,arial;
+    font-size: 14px;
+    color: #242424;
+    font-weight: 400;
+}
+html{
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size: 10px;
+    -webkit-tap-highlight-color:transparent;
+}
+.container ul :hover{
+    color: #3b187e;
+    text-decoration: underline;
+     
+}
+        .container{
+    width: 1150px;
+    margin: 0px auto;
+    display: table;
+}
+ 
+.sticky{
+
+position: sticky;
+top: 0;
+z-index: 99;
+
+}
+.white{
+background-color: white;
+
+} 
+   
+.header-top{
+      background: #b13d39;
+      width: 100%;
+      float: left;
+}
+.header-left{
+    list-style: none;
+    float: left;
+}
+.header-left li{
+        float: left;
+        padding: 10px 0px;
+        margin-right: 20px;
+}
+.header-left li a{
+          font-size: 15px;
+          color: #fff;
+          text-decoration: none;
+}
+.header-right{
+    list-style: none;
+    float: right;
+}
+.header-right li{
+        float: left;
+        padding: 10px 0px;
+        margin-right: 12px; 
+}
+.header-right li a{
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+.header-right li{
+         
+        }
+         
+        
+        .header-nenu{
+            display: flex;
+             justify-content: space-between;
+             align-items: center;
+            
+             
+        }
+        .header-nenu img{
+             width: 15rem;
+        }
+         .logo img{
+            height: 8rem;
+            width: 8rem;
+         }
+        .header-nenu ul{
+               display: flex;
+               list-style: none;
+               gap:3rem;
+             
+              
+        }
+        .header-nenu ul a{
+            text-decoration: none;
+            color: black;
+             font-weight: bold;
+             font-family: 'Bree Serif', serif;
+             font-size: 17px;
+            
+
+        }
+.heading{
+  font-family:'Bree Serif', serif;
+  color: #b13d39;
+  text-align: center;
+  font-size:50px;
+  background-color: #ebebeb;
+  
+}
+.heading2{
+  font-family:'Bree Serif', serif;
+  color: #b13d39;
+  text-align: justify;
+  font-size:30px;
+   margin: 3rem;
+  
+}
+.heading3{
+  font-family:'Bree Serif', serif;
+  margin: 3rem;
+  text-align:justify;
+  font-size:20px;
+  
+  
+}
+.placement {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.card {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  padding: 30px 70px;
+  background: #fff;
+  cursor: pointer;
+  margin-right: 30px;
+  
+  
+}
+
+.card:hover {
+  height: 320px;
+}
+
+.imgbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-80px);
+  z-index: 99;
+ 
+ 
+}
+
+.imgbox img {
+  width: 100%;
+  aspect-ratio: 2/2;
+  margin-bottom: 10px;
+            object-position: center;
+            object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  padding: 10px 20px;
+  text-align: center;
+  transform: translateY(-450px);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.card:hover > .content {
+  opacity: 1;
+  transform: translateY(-180px);
+}
+
+.content h2 {
+  color: #b13d39;
+  font-family: 'Bree Serif', serif;
+}
+.content p {
+   font-size: 14.9px;
+   font-family: 'Bree Serif', serif;
+}
+
+.table-wrap {
+  max-width: 800px;
+  margin: 80px auto;
+  overflow-x: auto;
+}
+
+table, td, th {
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size:18px;
+  text-transform:capitalize;
+}
+th{
+    background: #000000d6;
+    color: #fff;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+  white-space: nowrap;
+}
+
+table tbody tr:nth-child(odd) {
+    background: #69b2ebcc;
+    color: #000;
+    font-weight: 500;
+}
+
+.box-wrap {
+  padding: 0px 16px;
+}/*# sourceMappingURL=main.css.map */
+
+.placestudent{
+  margin-left: 22rem;
+  display: flex;
+}
+ 
+.footer-section{
+width: 100%;
+float: left;
+padding-top: 50px;
+padding-bottom: 20px;
+background: #b13d39;
+}
+.footer-section h3{
+font-size: 28px;
+color: #fff;
+}
+.footer-section p{
+font-size: 14px;
+line-height: 25px;
+color: #fff;
+margin-top: 20px;
+padding: 0px 30px 0px 0px;
+}
+ 
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-container .footer-about{
+    width: 50vw;
+}
+.footer-container .quick-link{
+    width: 60vw;
+}
+.quick-link ul{
+margin-top: 30px;
+list-style: none;
+margin-left: 10rem;
+ 
+width: 100%;
+}
+.quick-link li{
+width: 70%;
+ 
+margin-bottom:20px;
+}
+
+ 
+.logo2 img{
+    height: 11rem;
+    width: 35rem;
+    margin-top: 70px;
+    
+ }
+
+.quick-link li a{
+font-size: 14px;
+color: #fff;
+text-decoration: none;
+letter-spacing: 0.5px;
+} 
+.copyright{
+text-align: center;
+border-top: 1px solid #b3b3b3;
+margin-top: 30px;
+padding-top: 20px;
+color: #fff;
+}
+.dropbtn {
+     
+    
+     border: none;
+     cursor: pointer;
+     font-size: 18px;
+     font-family: 'Bree Serif', serif;
+     font-weight: bold;
+     
+   }
+   
+   .dropdown {
+     position: relative;
+     display: inline-block;
+   }
+   
+   .dropdown-content {
+     display: none;
+     position: absolute;
+     min-width: 160px;
+      z-index: 1;
+      background-color:rgb(248, 248, 237);
+   }
+   
+   .dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+   }
+   
+   .dropdown-content a:hover {background-color: #f1f1f1}
+   
+   .dropdown:hover .dropdown-content {
+     display: block;
+   }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="sticky">
+
+      <div class="header-top">
+          <div class="container" style="display: flex;justify-content: space-between; align-items: center;">
+                  <ul class="header-left">
+                      <li><a href="#"><i class="fa fa-phone"></i><span>123456</span></a></li>
+                      <li><a href="#"><i class="fa fa-envelope-o"></i><span>info@yourmail.com</span></a></li> 
+                      </ul>
+                      <ul class="header-left">
+                          <li><a href="https://www.facebook.com/jitnashik/"><i class="fa fa-facebook"></i></a></li>
+                           <li><a href="https://www.instagram.com/jesitmrn/""><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.youtube.com/@JITNASHIK-xo7su"><i class="fa fa-youtube-play"></i></a></li>
+                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      </ul>
+              </div>
+              </div>
+              <div class="white">
+                  <div class="container">
+                      <div class="header-nenu" style="display: flex; justify-content: space-between;">
+                          <img src="jit_logo-removebg-preview.png">
+                          <ul>
+                            <li> <a href="index.html">HOME</a></li>
+                            <li> <a href="aboutus.html">ABOUT JIT</a></li>
+                           
+                            <div class="dropdown">
+                                <li class="dropbtn">ADMISSION</li>
+                                <div class="dropdown-content">
+                                <a href="firstyear.html">First Year</a>
+                                <a href="secondyear.html">Direct Second Year</a>
+                                
+                                
+                                </div>
+                              </div>
+                            <li> <a href="gallery.html">GALLERY</a></li>
+                            <li> <a href="index.html">DEPARTMENT</a></li>
+                            <li> <a href="placement.html">T&P</a></li>
+                            <li><a href="contactus.html">CONTACT US</a></li>
+                            <li> <a href="registration.html">REGISTER</a></li>
+                        </ul>
+                         <div class="logo"> <img src="B++.png">
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+      </div>
+
+    <h1 class="heading">Welcome To Training and Placement Cell in JIT Institute</h1>
+    <h2 class="heading2">Profile</h2>
+    <p class="heading3"> Institute has meticulously planned to make all its outgoing students employed. The institute had employed well experienced faculty, designed and delivered programs that help enhancing the communication and soft skills which are required for making the students employable.</p>
+    <div class="placement">
+    <div class="card">
+      <div class="imgbox">
+        <img src="placement4.jpg" alt="">
+              </div>
+      <div class="content">
+        <h2>Ms.Dhanshree Tambe</h2>
+        <p>
+          Placed in Reliance Working on Jio. Also got selected for Mphasis as Trainee Engineer <br>'2016-2017'
+        </p>
+      </div>
+    </div>
+   
+    <div class="card">
+      <div class="imgbox">
+        <img src="placement1.jpg" alt="">
+              </div>
+       <div class="content">
+        <h2> Sakshi Shelake</h2>
+        <p>
+          Placed in Capegemini, Pune as Analyst & A4 Ms. <br>'2019-2020'
+        </p>
+      </div>
+    </div>
+   
+    <div class="card">
+      <div class="imgbox">
+        <img src="placement2.jpg" alt="">
+              </div>
+       <div class="content">
+        <h2>Mr.Tarang Patel</h2>
+        <p>
+          Placed in Byjus, Mumbai as Senior Programmer.<br>'2019-2020'
+        </p>
+      </div>
+    </div>
+   
+
+    <div class="card">
+      <div class="imgbox">
+        <img src="placement3.jpg" alt="">
+      </div>
+          <div class="content">
+        <h2>Mr.Manoj Khairnar</h2>
+        <p>
+          Placed in TCS, Mumbai as Transformation Manager.<br> '16-17'
+        </p>
+      </div>
+    </div>
+    </div>
+
+    <div>
+      <h2 class="heading"><center>Training and Placement Cell Members</center></h2>
+    </div>
+   
+
+    <div class="box-wrap">
+      <div class="table-wrap">
+          <table>
+              <thead>
+                  <tr>
+                      <th>Sr No.</th>
+                      <th>Name of the Member</th>
+                      <th>Designation</th>
+                       
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>1</td>
+                      <td>Pincipal Dr. M. V. Bhatkar</td>
+                      <td>Chairman</td>
+                     
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>Dr. Kiran Derle</td>
+                      <td>Member</td>
+                  </tr>
+                  <tr>
+                      <td>3</td>
+                      <td>Prof. Dipti D.Surwase</td>
+                      <td>Member</td>
+                   </tr>
+                   <tr>
+                    <td>4</td>
+                    <td>Prof. S.B.Kasabe</td>
+                    <td>Member</td>
+                 </tr>
+                 <tr>
+                  <td>5</td>
+                  <td>Ms. K. K. Khairnar</td>
+                  <td>Member</td>
+               </tr>
+               <tr>
+                <td>6</td>
+                <td>Prof. R. C. Karpe</td>
+                <td>Member</td>
+             </tr>
+             <tr>
+              <td>7</td>
+              <td>Prof. A. A. Patil</td>
+              <td>Member</td>
+           </tr>
+           <tr>
+            <td>8</td>
+            <td>Prof. S. R. Kachawa</td>
+            <td>Member</td>
+         </tr>
+         <tr>
+          <td>9</td>
+          <td>Prof. Ramesh Ghule</td>
+          <td>Member</td>
+       </tr>
+              </tbody>
+          </table>
+      </div>
+   </div>
+
+   <h1  class="heading"><center>Toppers in JIT Institute</center></h1><br><br>
+   <div class="placestudent">
+   <img src="place.PNG" alt="" height="450rem" width="450rem">
+   <li><img src="topper.PNG" alt="" height="450rem" width="450rem"></li>
+   </div>
+   <br><br><br><br>
+
+     
+                
+   <div class="footer-section">
+    <div class="container footer-container">
+        <div class="footer-about">
+            <h3>About College</h3>
+            <p>Jawahar Education Society brings quality engineering education to Nashik, with the establishment of Jawahar Education Society's Institute of Technology, Management & Research, Nashik popularly known as JIT, Nashik.</p>
+            
+        </div>
+        <div class="quick-link">
+       
+                <ul>
+             <li><a href=""><i class="fa fa-map-marker"></i> JIT Nashik,Gangapur Road,Nashik</a></li>
+             <li><a href=""><i class="fa fa-phone"></i>Call: 0253 2970077,   0253 2970078<br>
+                        Fax: 0253 2970078 , 9022025101</a></li>
+            <li><a href="#"><i class="fa fa-envelope"></i>mailto:principaljitnashik@gmail.com</a></li>
+            <li><a href="https://www.facebook.com/jitnashik/"><i class="fa fa-facebook"></i> JIT Facebook</a></li>
+                    <li><a href="https://www.youtube.com/@JITNASHIK-xo7su"><i class="fa fa-youtube"></i>JIT Youtube</a></li>
+                    <li><a href="https://www.instagram.com/jesitmrn/"><i class="fa fa-instagram"></i>JIT Instagram</a></li>
+
+                </ul>
+        </div>
+        <div class="width-33">
+            
+           <div class="logo2"><img src="jit-white-logo.png" alt=""></div></div>
+           
+        </div>
+    </div>
+    <div class="copyright">Copyright @ 2023 All Copyright dezven.com</div>
+ </div>
+
+  </body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquiry Admission Form</title>
+  
+  <style>
+     *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+    body {
+      display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+      background: url(clg.jpeg);
+    background-size: cover;
+}
+
+.container ul :hover{
+    color: #3b187e;
+    text-decoration: underline;
+     
+}
+.container {
+  width: 100%;
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 28px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: rgb(226, 45, 45);
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px black;
+}
+
+.main-user-info{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ padding: 20px 0;
+}
+
+.form-group:nth-child(2n){
+    justify-content: end;
+}
+
+.form-group{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.form-group label{
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.form-group input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+
+.form-group1 {
+  margin-bottom: 20px;
+}
+.form-group1 a{
+  display: block;
+  width: 97%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+} 
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  background-color: #004080;
+}
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Enquiry Admission Form</h1>
+    <form id="admissionForm">
+      <div class="main-user-info">
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="course">Course of Interest:</label>
+        <select id="course" name="course" required>
+          <option value="" disabled selected>Select a course</option>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Business Administration">Information Technology</option>
+          <option value="Engineering">AIDS Engineering</option>
+          <option value="Medicine">Civil Engineering</option>
+          <option value="Medicine">Chemical  Engineering</option>
+          <option value="Medicine">Mechnical Engineering</option>
+          <!-- Add more course options as needed -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Additional Message:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+      </div>
+      </div>
+      <div class="form-group1">
+        <button type="submit">Submit Enquiry</button>
+      </div>
+      <div class="form-group1">
+        <a href="index.html">Back</a>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('admissionForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const formData = new FormData(event.target);
+  const data = {};
+  formData.forEach((value, key) => data[key] = value);
+  console.log(data);
+  // Here you can implement the logic to submit the form data to the server or perform other actions.
+});
+
+  </script>
+</body>
+
+</html>

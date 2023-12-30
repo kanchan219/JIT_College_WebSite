@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+}
+html,body{
+    font-family: roboto,sans-serif,arial;
+    font-size: 14px;
+    color: #242424;
+    font-weight: 400;
+}
+html{
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size: 10px;
+    -webkit-tap-highlight-color:transparent;
+}
+.container ul :hover{
+    color: #3b187e;
+    text-decoration: underline;
+     
+}
+.container{
+    width: 1150px;
+    margin: 0px auto;
+    display: table;
+}
+ 
+.sticky{
+            position: sticky;
+            top: 0;
+            z-index: 99;
+
+}
+            .white{
+            background-color: white;
+
+            }
+            
+.header-top{
+      background: #b13d39;
+      width: 100%;
+      float: left;
+}
+.header-left{
+    list-style: none;
+    float: left;
+}
+.header-left li{
+        float: left;
+        padding: 10px 0px;
+        margin-right: 20px;
+}
+.header-left li a{
+          font-size: 15px;
+          color: #fff;
+          text-decoration: none;
+}
+.header-right{
+    list-style: none;
+    float: right;
+}
+.header-right li{
+        float: left;
+        padding: 10px 0px;
+        margin-right: 12px; 
+}
+.header-right li a{
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+.header-right li{
+         
+        }
+         
+        
+        .header-nenu{
+            display: flex;
+             justify-content: space-between;
+             align-items: center;
+            
+             
+        }
+        .header-nenu img{
+             width: 15rem;
+        }
+         .logo img{
+            height: 8rem;
+            width: 8rem;
+         }
+        .header-nenu ul{
+               display: flex;
+               list-style: none;
+               gap:3rem;
+              
+        }
+        .header-nenu ul a{
+            text-decoration: none;
+            color: black;
+             font-weight: bold;
+             font-family: 'Bree Serif', serif;
+             font-size: 17px;
+        
+        }
+        @import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body{
+  background: #F0F0F0;
+  font-family: Open Sans ,sans-serif;
+  line-height:1.5em;
+}
+#contact {
+width: 500px;
+margin:2em auto;
+background:white;
+position: relative;
+}
+#contact::after {
+content: "";
+display: block;
+height: 30px;
+width: 90%;
+left: 5%;
+bottom: 0;
+position: absolute;
+-webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.19);
+box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.19);
+border-radius: 100%;
+z-index: -1;
+}
+#contact article {
+  padding: 1em;
+}
+#contact h1 {
+background: #b13d39;
+font-family: roboto,sans-serif,arial;
+font-size: 1.75em;
+padding: 0.6em 0 0.6em 0.4em;
+color: white;
+text-shadow: 0 0.06em 0 #424242;
+position: relative;
+}
+.contactbutton {
+background: #b13d39;
+-webkit-box-shadow: 1px 1px 0 0 #832032,2px 2px 0 0 #832032,3px 3px 0 0 #832032;
+box-shadow: 1px 1px 0 0 #832032,2px 2px 0 0 #832032,3px 3px 0 0 #832032;
+text-align: center;
+display: block;
+width: 100%;
+height: 50px;
+margin-top: 20px;
+margin-bottom: 2px;
+cursor: pointer;
+}
+.contactbutton:hover {
+-webkit-box-shadow: 1px 1px 0 0 #832032,0px 0px 0 0 #832032,0px 0px 0 0 #832032;
+box-shadow: 1px 1px 0 0 #832032,0px 0px 0 0 #832032,0px 0px 0 0 #832032;
+margin-top: 22px;
+margin-left: 2px;
+margin-bottom: 0px;
+}
+.mail {
+margin-top: 11px;
+font-size: 15px;
+display: inline-block;
+border-top: 2em solid transparent;
+border-left: 2.6em solid #fcfafa;
+height: 0;
+width: 0;
+position: relative;
+}
+.mail:before {
+content: '';
+top: -2.5em;
+left: -2.95em;
+display: block;
+position: absolute;
+border-top: 1.2em solid #fcfafa;
+border-left: 1.6em solid transparent;
+border-right: 1.6em solid transparent;
+border-bottom: 1em solid transparent;
+font-size: 0.8em;
+}
+.mail::after {
+display: block;
+content: "";
+position: absolute;
+border-top: 2em solid transparent;
+border-right: 2.6em solid #fcfafa;
+height: 0;
+width: 0;
+left: -2.18em;
+bottom: 0;
+}
+#checkcontact{
+position: absolute;
+left: -9999px;
+}
+.contactform {
+overflow: hidden;
+max-height: 0px;
+-webkit-transition: all linear 1s;
+-moz-transition: all linear 1s;
+-o-transition: all linear 1s;
+-ms-transition: all linear 1s;
+transition: all linear 1s;
+}
+#checkcontact:checked + .contactform {
+max-height: 1000px;
+}
+.input_wrapper {
+position: relative;
+}
+.textarea_wrapper textarea {
+margin-top: 20px;
+display: block;
+width: 100%;
+background: white;
+border: 1px solid #DADADA;
+box-shadow: 0 0 1px 0 #E4E4E4;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+padding: 1em;
+-webkit-transition: all 250ms ease;
+-moz-transition: all 250ms ease;
+-ms-transition: all 250ms ease;
+-o-transition: all 250ms ease;
+transition: all 250ms ease;
+color: #5E5E5E;
+}
+.input_wrapper input[type="text"] {
+margin-top: 1em;
+display: block;
+width: 100%;
+background: white;
+border: 1px solid #DADADA;
+box-shadow: 0 0 1px 0 #E4E4E4;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+padding: 1em;
+-webkit-transition: all 250ms ease;
+-moz-transition: all 250ms ease;
+-ms-transition: all 250ms ease;
+-o-transition: all 250ms ease;
+transition: all 250ms ease;
+color: #5E5E5E;
+text-indent: 15%;
+}
+.input_wrapper input[type="text"]:focus {
+background: rgba(242, 56, 90, 0.05);
+box-shadow: inset 2px 2px 5px 0 #DADADA;
+outline: none;
+text-indent: 0;
+}
+.input_wrapper label {
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+background: #F2385A;
+color: white;
+font-family: Oswald ,sans-serif;
+box-sizing: border-box;
+width: 15%;
+text-align: center;
+line-height: 2.8em;
+-webkit-transition: all 250ms ease;
+-moz-transition: all 250ms ease;
+-ms-transition: all 250ms ease;
+-o-transition: all 250ms ease;
+transition: all 250ms ease;
+}
+.input_wrapper input[type="text"]:focus + label {
+left: 85%;
+}
+.textarea_wrapper textarea {
+margin-top: 20px;
+display: block;
+width: 100%;
+  min-height:150px;
+background: white;
+border: 1px solid #DADADA;
+box-shadow: 0 0 1px 0 #E4E4E4;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+padding: 1em;
+-webkit-transition: all 250ms ease;
+-moz-transition: all 250ms ease;
+-ms-transition: all 250ms ease;
+-o-transition: all 250ms ease;
+transition: all 250ms ease;
+color: #5E5E5E;
+}
+.textarea_wrapper textarea:focus {
+background: rgba(242, 56, 90, 0.05);
+box-shadow: inset 2px 2px 5px 0 #DADADA;
+outline: none;
+}
+.submit_wrapper {
+text-align: center;
+}
+.submit_wrapper input {
+text-align: center;
+display: inline-block;
+width: 40%;
+height: 50px;
+margin-top: 1em;
+margin-bottom: 6px;
+cursor: pointer;
+background: #F2385A;
+color: white;
+font-family: Oswald ,sans-serif;
+font-size: 1em;
+border: none;
+-webkit-box-shadow: 1px 1px 0 0 #832032,2px 2px 0 0 #832032,3px 3px 0 0 #832032;
+box-shadow: 1px 1px 0 0 #832032,2px 2px 0 0 #832032,3px 3px 0 0 #832032;
+-webkit-appearance: none;
+  -webkit-transition: all 250ms ease;
+-moz-transition: all 250ms ease;
+-ms-transition: all 250ms ease;
+-o-transition: all 250ms ease;
+transition: all 250ms ease;
+}
+.submit_wrapper input:hover {
+-webkit-box-shadow: 1px 1px 0 0 #832032,0px 0px 0 0 #832032,0px 0px 0 0 #832032;
+box-shadow: 1px 1px 0 0 #832032,0px 0px 0 0 #832032,0px 0px 0 0 #832032;
+margin-top: 22px;
+margin-left: 2px;
+margin-bottom: 0px;
+}
+
+@media (max-width: 500px){
+#contact {
+width: 100%;
+}
+  .input_wrapper label {
+line-height: 3.5em;
+font-size: 0.8em;
+}
+}
+
+.header{
+    color: #b13d39;
+    text-align: justify;
+    margin-left: 7rem;
+    margin-top: 3rem;
+}
+.para{
+    text-align: justify;
+    margin-left: 7rem;
+    margin-top: 1rem;
+}
+.footer-section{
+width: 100%;
+float: left;
+padding-top: 50px;
+padding-bottom: 20px;
+background: #b13d39;
+}
+.footer-section h3{
+font-size: 28px;
+color: #fff;
+}
+.footer-section p{
+font-size: 14px;
+line-height: 25px;
+color: #fff;
+margin-top: 20px;
+padding: 0px 30px 0px 0px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.footer-container .footer-about{
+    width: 30vw;
+}
+.footer-container .quick-link{
+    width: 40vw;
+}
+ 
+.quick-link ul{
+margin-top: 30px;
+list-style: none;
+margin-left: 10rem;
+ 
+width: 100%;
+}
+.quick-link li{
+width: 70%;
+ 
+margin-bottom:20px;
+}
+ 
+.logo2 img{
+    height: 11rem;
+    width: 35rem;
+    margin-top: 70px;
+    
+ }
+
+.quick-link li a{
+font-size: 14px;
+color: #fff;
+text-decoration: none;
+letter-spacing: 0.5px;
+} 
+.copyright{
+text-align: center;
+border-top: 1px solid #b3b3b3;
+margin-top: 30px;
+padding-top: 20px;
+color: #fff;
+}
+.dropbtn {
+     
+    
+     border: none;
+     cursor: pointer;
+     font-size: 18px;
+     font-family: 'Bree Serif', serif;
+     font-weight: bold;
+     
+   }
+   
+   .dropdown {
+     position: relative;
+     display: inline-block;
+   }
+   
+   .dropdown-content {
+     display: none;
+     position: absolute;
+     min-width: 160px;
+      z-index: 1;
+      background-color:rgb(248, 248, 237);
+   }
+   
+   .dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+   }
+   
+   .dropdown-content a:hover {background-color: #f1f1f1}
+   
+   .dropdown:hover .dropdown-content {
+     display: block;
+   }
+
+    </style>
+</head>
+<body>
+    <div class="sticky">
+
+        <div class="header-top">
+            <div class="container" style="display: flex;justify-content: space-between; align-items: center;">
+                    <ul class="header-left">
+                        <li><a href="#"><i class="fa fa-phone"></i><span>123456</span></a></li>
+                        <li><a href="#"><i class="fa fa-envelope-o"></i><span>info@yourmail.com</span></a></li> 
+                        </ul>
+                        <ul class="header-left">
+                            <li><a href="https://www.facebook.com/jitnashik/"><i class="fa fa-facebook"></i></a></li>
+                             <li><a href="https://www.instagram.com/jesitmrn/""><i class="fa fa-instagram"></i></a></li>
+                              <li><a href="https://www.youtube.com/@JITNASHIK-xo7su"><i class="fa fa-youtube-play"></i></a></li>
+                               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                </div>
+                </div>
+                <div class="white">
+                    <div class="container">
+                        <div class="header-nenu" style="display: flex; justify-content: space-between;">
+                            <img src="jit_logo-removebg-preview.png">
+                            <ul>
+                                <li> <a href="index.html">HOME</a></li>
+                                <li> <a href="aboutus.html">ABOUT JIT</a></li>
+                               
+                                <div class="dropdown">
+                                    <li class="dropbtn">ADMISSION</li>
+                                    <div class="dropdown-content">
+                                    <a href="firstyear.html">First Year</a>
+                                    <a href="secondyear.html">Direct Second Year</a>
+                                   
+                                    
+                                    </div>
+                                  </div>
+                                <li> <a href="gallery.html">GALLERY</a></li>
+                                <li> <a href="index.html">DEPARTMENT</a></li>
+                                <li> <a href="placement.html">T&P</a></li>
+                                <li><a href="contactus.html">CONTACT US</a></li>
+                                <li> <a href="registration.html">REGISTER</a></li>
+                            </ul>
+                           <div class="logo"> <img src="B++.png">
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+
+          
+             <section id="contact">
+	<div class="sectionheader">	<h1>CONTACT</h1></div>
+	<article>
+	<p>Jawahar Education Society brings quality engineering education to Nashik, with the establishment of Jawahar Education Society's Institute of Technology, Management & Research, Nashik popularly known as JIT, Nashik.</p>
+		
+			<label for="checkcontact" class="contactbutton"><div class="mail"></div></label><input id="checkcontact" type="checkbox">
+	
+			<form action="" method="post" class="contactform">
+				<p class="input_wrapper"><input type="text" name="contact_nom" value=""  id ="contact_nom"><label for="contact_nom">NAME</label></p>
+
+				<p class="input_wrapper"><input type="text" name="contact_email" value=""  id ="contact_email"><label for="contact_email">EMAIL</label></p>
+
+				<p class="input_wrapper"><input type="text" name="contact_sujet" value=""  id ="contact_sujet"><label for="contact_sujet">SUBJECT</label></p>
+
+				<p class="textarea_wrapper"><textarea name="contact_message" id="contact_message"></textarea></p>
+				<p class="submit_wrapper"><input type="submit" value="SUBMIT"></p>			
+			</form>
+
+            
+	</article>
+    
+</section>
+ 
+<h1 class="header">Address</h1>
+<p class="para">Jawahar Education Society’s,<br>
+    Institute of Technology, Management & Research,<br>
+    Survey No 48, Gowardhan, Gangapur Road, Nashik - 422 222. Maharashtra, India
+</p>
+<h1 class="header">Contact Number</h1>
+<p class="para">0253-2970077,  9022025101
+    7028300991, 8788003673, 7588069094
+    </p>
+    <h1 class="header">Email-Id</h1>
+    <p class="para">jitnashik2012@gmail.com,
+        principaljitnashik@rediffmail.com</p>
+        <h1 class="header">Website</h1>
+        <p class="para"><a href="index.html">http://www.jitnashik.edu.in</a></p>    
+              
+
+               <br><br>
+                <div class="footer-section">
+                    <div class="container footer-container">
+                        <div class="footer-about">
+                            <h3>About College</h3>
+                            <p>Jawahar Education Society brings quality engineering education to Nashik, with the establishment of Jawahar Education Society's Institute of Technology, Management & Research, Nashik popularly known as JIT, Nashik.</p>
+                            
+                        </div>
+                        <div class=" quick-link">
+                       
+                                <ul>
+                             <li><a href=""><i class="fa fa-map-marker"></i> JIT Nashik,Gangapur Road,Nashik</a></li>
+                             <li><a href=""><i class="fa fa-phone"></i>Call: 0253 2970077,   0253 2970078<br>
+                                        Fax: 0253 2970078 ,   9022025101</a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i>mailto:principaljitnashik@gmail.com</a></li>
+                            <li><a href="https://www.facebook.com/jitnashik/"><i class="fa fa-facebook"></i> JIT Facebook</a></li>
+                                    <li><a href="https://www.youtube.com/@JITNASHIK-xo7su"><i class="fa fa-youtube"></i>JIT Youtube</a></li>
+                                    <li><a href="https://www.instagram.com/jesitmrn/"><i class="fa fa-instagram"></i>JIT Instagram</a></li>
+                
+                                </ul>
+                        </div>
+                        <div class="width-33">
+                            
+                           <div class="logo2"><img src="jit-white-logo.png" alt=""></div></div>
+                           
+                        </div>
+                    </div>
+                    <div class="copyright">Copyright @ 2023 All Copyright dezven.com</div>
+                 </div>
+                 <script>
+                    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+                      event.preventDefault(); // Prevent form submission
+                      const fullName = document.getElementById('fullName').value;
+                      const email = document.getElementById('email').value;
+                      const phoneNumber = document.getElementById('phoneNumber').value;
+                      const password = document.getElementById('password').value;
+                      const confirmPassword = document.getElementById('confirm-password').value;
+                
+                      if (password !== confirmPassword) {
+                        console.log("Passwords do not match!");
+                      } else {
+                        // Simulate successful registration
+                        console.log("Registration successful!");
+                        console.log("Full Name: " + fullName);
+                        console.log("Email: " + email);
+                      }
+                    });
+</body>
+</html>

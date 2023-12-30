@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+}
+html,body{
+    font-family: roboto,sans-serif,arial;
+    font-size: 14px;
+    color: #242424;
+    font-weight: 400;
+}
+html{
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size: 10px;
+    -webkit-tap-highlight-color:transparent;
+}
+.container ul :hover{
+    color: #3b187e;
+    text-decoration: underline;
+     
+}
+.container{
+    width: 1150px;
+    margin: 0px auto;
+    display: table;
+}
+
+.sticky{
+            position: sticky;
+            top: 0;
+            z-index: 99;
+
+}
+            .white{
+            background-color: white;
+
+            }
+ 
+.header-top{
+      background: #b13d39;
+      width: 100%;
+      float: left;
+}
+.header-left{
+    list-style: none;
+    float: left;
+}
+.header-left li{
+        float: left;
+        padding: 10px 0px;
+        margin-right: 20px;
+}
+.header-left li a{
+          font-size: 15px;
+          color: #fff;
+          text-decoration: none;
+}
+.header-right{
+    list-style: none;
+    float: right;
+}
+.header-right li{
+        float: left;
+        padding: 10px 0px;
+        margin-right: 12px; 
+}
+.header-right li a{
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}       
+        .header-nenu{
+            display: flex;
+             justify-content: space-between;
+             align-items: center;
+              
+        }
+        .header-nenu img{
+             width: 15rem;
+        }
+         .logo img{
+            height: 8rem;
+            width: 8rem;
+         }
+        .header-nenu ul{
+               display: flex;
+               list-style: none;
+               gap:3rem;
+               
+        }
+        .header-nenu ul a{
+            text-decoration: none;
+            color: black;
+             font-weight: bold;
+             font-family: 'Bree Serif', serif;
+             font-size: 17px;
+            
+
+        }
+
+         .gallery{
+            width: 100%;
+            float: left;
+            margin-top: 30px;
+        }
+        .gallery img{
+            height: auto;
+            aspect-ratio: 3/2;
+            width: 98%;
+            margin-bottom: 10px;
+            object-position: center;
+            object-fit: cover;
+        }
+        
+        
+.wrapper{
+width: 80%;
+/*padding: 30*/
+margin-left: 130px;
+}
+.section-header{
+text-transform: uppercase;
+line-height: 70px;
+padding-bottom: 30px;
+font-size: 50px;
+color: #262626;
+letter-spacing: 2px;
+background-color: #ebebeb;
+text-align: center;
+font-family: 'Bree Serif', serif;
+
+}
+.content {
+padding: 10%;
+}
+.content h2 {
+font-size: 30px;
+text-transform: uppercase;
+margin-bottom: 15px;
+}
+.content p {
+line-height: 1.5;
+font-size: 23px;
+font-family: 'Bree Serif', serif;
+color: #b13d39;
+font-weight: bold;
+}
+.main-content{
+width: 100%;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+grid-main-content-gap: 25px;
+grid-column-gap: 15px;
+}
+.main-content .box{
+position: relative;
+cursor: pointer;
+margin-bottom: 15px;
+box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+height: 250px;
+overflow: hidden;    
+}
+.main-content .box::before{
+content: '';
+position: absolute;
+top: 0;
+right: 0;
+width: 5px;
+height: 100%;
+transition: all 0.3s ease-in-out;
+}
+.main-content .box:hover:before{
+top: 0;
+right: calc(100% - 5px);
+z-index: 10;
+}
+.main-content .box img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.main-content .box .img-text {
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+background: rgba(255,255,255,0.9);
+width: 100%;
+height: 100%;
+top: 0;
+right: 100%;
+transition: all 0.5s ease-in-out;	
+}
+.main-content .box:hover .img-text{
+top: 0;
+right: 0;
+}
+.counter{
+text-align: center;
+padding: 30px 20px 30px 20px;
+width: 90%;
+margin: 1%;
+background: #b13d39;
+color: #fff;
+border-radius: 10px;
+}
+.counter i{
+font-size: 50px;
+}
+.counter h5{
+font-size: 25px;
+margin-top: 10px;
+}
+.counter p{
+font-size: 14px;
+}
+
+
+.footer-section{
+width: 100%;
+float: left;
+padding-top: 50px;
+padding-bottom: 20px;
+background: #b13d39;
+}
+.footer-section h3{
+font-size: 28px;
+color: #fff;
+}
+.footer-section p{
+font-size: 14px;
+line-height: 25px;
+color: #fff;
+margin-top: 20px;
+padding: 0px 30px 0px 0px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.footer-container .footer-about{
+    width: 30vw;
+}
+.footer-container .quick-link{
+    width: 40vw;
+}
+ 
+.quick-link ul{
+margin-top: 30px;
+list-style: none;
+margin-left: 10rem;
+ 
+width: 100%;
+}
+.quick-link li{
+width: 70%;
+ 
+margin-bottom:20px;
+}
+ 
+.logo2 img{
+    height: 11rem;
+    width: 35rem;
+    margin-top: 70px;
+    
+ }
+
+.quick-link li a{
+font-size: 14px;
+color: #fff;
+text-decoration: none;
+letter-spacing: 0.5px;
+} 
+.copyright{
+text-align: center;
+border-top: 1px solid #b3b3b3;
+margin-top: 30px;
+padding-top: 20px;
+color: #fff;
+}
+.dropbtn {
+     
+    
+     border: none;
+     cursor: pointer;
+     font-size: 18px;
+     font-family: 'Bree Serif', serif;
+     font-weight: bold;
+     
+   }
+   
+   .dropdown {
+     position: relative;
+     display: inline-block;
+   }
+   
+   .dropdown-content {
+     display: none;
+     position: absolute;
+     min-width: 160px;
+      z-index: 1;
+      background-color:rgb(248, 248, 237);
+   }
+   
+   .dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+   }
+   
+   .dropdown-content a:hover {background-color: #f1f1f1}
+   
+   .dropdown:hover .dropdown-content {
+     display: block;
+   }
+
+    </style>
+</head>
+<body>
+
+    <div class="sticky">
+
+        <div class="header-top">
+            <div class="container" style="display: flex;justify-content: space-between; align-items: center;">
+                    <ul class="header-left">
+                        <li><a href="#"><i class="fa fa-phone"></i><span>123456</span></a></li>
+                        <li><a href="#"><i class="fa fa-envelope-o"></i><span>info@yourmail.com</span></a></li> 
+                        </ul>
+                        <ul class="header-left">
+                            <li><a href="https://www.facebook.com/jitnashik/"><i class="fa fa-facebook"></i></a></li>
+                             <li><a href="https://www.instagram.com/jesitmrn/""><i class="fa fa-instagram"></i></a></li>
+                              <li><a href="https://www.youtube.com/@JITNASHIK-xo7su"><i class="fa fa-youtube-play"></i></a></li>
+                               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                </div>
+                </div>
+                <div class="white">
+                    <div class="container">
+                        <div class="header-nenu" style="display: flex; justify-content: space-between;">
+                            <img src="jit_logo-removebg-preview.png">
+                            <ul>
+                                <li> <a href="index.html">HOME</a></li>
+                                <li> <a href="aboutus.html">ABOUT JIT</a></li>
+                               
+                                <div class="dropdown">
+                                    <li class="dropbtn">ADMISSION</li>
+                                    <div class="dropdown-content">
+                                    <a href="firstyear.html">First Year</a>
+                                    <a href="secondyear.html">Direct Second Year</a>
+                                    
+                                    
+                                    </div>
+                                  </div>
+                                <li> <a href="gallery.html">GALLERY</a></li>
+                                <li> <a href="index.html">DEPARTMENT</a></li>
+                                <li> <a href="placement.html">T&P</a></li>
+                                <li><a href="contactus.html">CONTACT US</a></li>
+                                <li> <a href="registration.html">REGISTER</a></li>
+                            </ul>
+                           <div class="logo"> <img src="B++.png">
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+
+                <h1 class="section-header">Photo Gallery</h1><br>
+                <div class="wrapper">
+                    
+                    <div class="main-content">
+                        <div class="box">
+                            <img src="te.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2 class="abc">JIT INSTITUTE</h2>
+                                 <p>Computer Lab.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="te2.jfif" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2 class="abc"> JIT INSTITUTE</h2>
+                                <p>Project Exhibition.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="te3.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2 class="abc"> JIT INSTITUTE</h2>
+                                <p>Convocation Ceremony.</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="box">
+                            <img src="jit5.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2 class="abc"> JIT INSTITUTE</h2>
+                                <p>College Structure.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="atv_car_2.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2 class="abc"> JIT INSTITUTE</h2>
+                                <p>Mega ATV Championship.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="atv_car2.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2 class="abc"> JIT INSTITUTE</h2>
+                                <p>Mega ATV Championship.</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="box">
+                            <img src="atv_car5.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2> JIT INSTITUTE</h2>
+                                <p>Mega ATV Championship TEAM KRAZ Secured All India Rank Across All Formats.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="buses.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2>JIT INSTITUTE</h2>
+                                    <p>Bus Facilities Available.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="canteen.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2>JIT INSTITUTE</h2>
+                                <p>Canteen.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="classroom-1.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2>JIT INSTITUTE</h2>
+                                <p>Classroom.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="conv1.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2> JIT INSTITUTE</h2>
+                                <p>Convocation Ceremony.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="gymkhana.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2>JIT INSTITUTE</h2>
+                                <p>Inaugration of Gymkhana.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="jitos7.png" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2> JIT INSTITUTE</h2>
+                                <p>Shivjaynti Program.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="jitos8.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2> JIT INSTITUTE</h2>
+                                <p>Shivjaynti Program.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="jitos9.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2> JIT INSTITUTE</h2>
+                                <p>Prize Distribution.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="jitos10.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2> JIT INSTITUTE</h2>
+                                <p>Cultural Event.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="jitos11.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2> JIT INSTITUTE</h2>
+                                <p>Indoor Shorts.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="jitos12.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2> JIT INSTITUTE</h2>
+                                <p>JitOtsav.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="jitos13-min.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2> JIT INSTITUTE</h2>
+                                <p>JitOtsav.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="jitos16.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">    \
+                                        <h2> JIT INSTITUTE</h2>  
+                                <p>Cutural Night At JITOtsav.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="library.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2>JIT INSTITUTE</h2>
+                                <p>Library.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="box">
+                            <img src="nnsc3.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2> JIT INSTITUTE</h2>
+                                <p>National Network Security Championship.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="box">
+                            <img src="nss1.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2> JIT INSTITUTE</h2>
+                                <p>Work Shop On Sexual Harrassment Of Woman at Workplace.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="box">
+                            <img src="principal.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2>JIT INSTITUTE</h2>
+                                <p>JIT College Principal.<br>Dr. M. V. Bhatkar<br>
+                                    Ph.D.(IIT Bombay)</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="box">
+                            <img src="pro-inau.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2> JIT INSTITUTE</h2>
+                                <p>QIP Organized By Computer dept.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="projit18_1.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2> JIT INSTITUTE</h2>
+                                <p>Project Exhibition.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="projit18_7.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2> JIT INSTITUTE</h2>
+                                <p>Project Exhibition.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="seminar onFire n Safety Sem-1.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2>JIT INSTITUTE</h2>
+                                <p>Seminar on Fire n Safety for Electrical dept.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="sexual_harrass3.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2> JIT INSTITUTE</h2>
+                                <p>Work Shop On Sexual Harrassment Of Woman at Workplace.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="sport2.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2> JIT INSTITUTE</h2>
+                                <p>Outdoor Shorts.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="teachers_day19_5.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2> JIT INSTITUTE</h2>
+                                <p>Teacher Day.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="tree2.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2> JIT INSTITUTE</h2>
+                                <p>Tree Plantation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="treeplant1.jpeg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2> JIT INSTITUTE</h2>
+                                <p>Tree Plantation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="treeplant2.jpeg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2> JIT INSTITUTE</h2>
+                                <p>Tree Plantation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="treeplant3.jpeg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2> JIT INSTITUTE</h2>
+                                <p>Tree Plantation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="yoga1.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2> JIT INSTITUTE</h2>
+                                <p>Yoga Day.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="workshop on LATEX Soft._2.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2> JIT INSTITUTE</h2>
+                                <p>Project Compitition.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="jitos15-min.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2> JIT INSTITUTE</h2>
+                                <p>JITOtsav.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="ganapati19.jpg" alt="">
+                            <div class="img-text">
+                                <div class="content">
+                                    <h2> JIT INSTITUTE</h2>
+                                <p>Ganesh Chathrurtti.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <div class="container footer-container">
+                        <div class="footer-about">
+                            <h3>About College</h3>
+                            <p>Jawahar Education Society brings quality engineering education to Nashik, with the establishment of Jawahar Education Society's Institute of Technology, Management & Research, Nashik popularly known as JIT, Nashik.</p>
+                            
+                        </div>
+                        <div class=" quick-link">
+                       
+                                <ul>
+                             <li><a href=""><i class="fa fa-map-marker"></i> JIT Nashik,Gangapur Road,Nashik</a></li>
+                             <li><a href=""><i class="fa fa-phone"></i>Call: 0253 2970077,   0253 2970078<br>
+                                        Fax: 0253 2970078 ,   9022025101</a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i>mailto:principaljitnashik@gmail.com</a></li>
+                            <li><a href="https://www.facebook.com/jitnashik/"><i class="fa fa-facebook"></i> JIT Facebook</a></li>
+                                    <li><a href="https://www.youtube.com/@JITNASHIK-xo7su"><i class="fa fa-youtube"></i>JIT Youtube</a></li>
+                                    <li><a href="https://www.instagram.com/jesitmrn/"><i class="fa fa-instagram"></i>JIT Instagram</a></li>
+                
+                                </ul>
+                        </div>
+                        <div class="width-33">
+                            
+                           <div class="logo2"><img src="jit-white-logo.png" alt=""></div></div>
+                           
+                        </div>
+                    </div>
+                    <div class="copyright">Copyright @ 2023 All Copyright dezven.com</div>
+                 </div>
+</body>
+</html>
+
