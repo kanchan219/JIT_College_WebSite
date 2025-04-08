@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+              *{
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+}
+html,body{
+    font-family: roboto,sans-serif,arial;
+    font-size: 14px;
+    color: #242424;
+    font-weight: 400;
+}
+html{
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size: 10px;
+    -webkit-tap-highlight-color:transparent;
+}
+.container ul :hover{
+    color: #3b187e;
+    text-decoration: underline;
+     
+}
+.container{
+    width: 1150px;
+    margin: 0px auto;
+    display: table;
+}
+ 
+.header-top{
+      background: #b13d39;
+      width: 100%;
+      float: left;
+}
+.header-left{
+    list-style: none;
+    float: left;
+}
+.header-left li{
+        float: left;
+        padding: 10px 0px;
+        margin-right: 20px;
+}
+.header-left li a{
+          font-size: 15px;
+          color: #fff;
+          text-decoration: none;
+}
+.header-right{
+    list-style: none;
+    float: right;
+}
+.header-right li{
+        float: left;
+        padding: 10px 0px;
+        margin-right: 12px; 
+}
+.header-right li a{
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}       
+        .header-nenu{
+            display: flex;
+             justify-content: space-between;
+             align-items: center;
+              
+        }
+        .header-nenu img{
+             width: 15rem;
+        }
+         .logo img{
+            height: 8rem;
+            width: 8rem;
+         }
+        .header-nenu ul{
+               display: flex;
+               list-style: none;
+               gap:3rem;
+               
+        }
+        .header-nenu ul a{
+            text-decoration: none;
+            color: black;
+             font-weight: bold;
+             font-family: 'Bree Serif', serif;
+             font-size: 17px;
+            
+
+        }
+        .sticky{
+            position: sticky;
+            top: 0;
+            z-index: 99;
+
+}
+            .white{
+            background-color: white;
+
+            }
+         h1{
+          font-size: 30px;
+           color: #b13d39;
+           font-family: 'Bree Serif', serif;
+           margin-top: 5rem;
+           text-align: center;
+           background-color: #ebebeb;
+           letter-spacing: 0.5px;
+        }
+       /* .contener{
+            background-color: rgb(247, 240, 247);
+        }*/
+        h3{
+            font-size: 25px;
+            color: #b13d39;
+            font-family:'Bree Serif', serif;
+            margin-top: 5rem;
+            text-align: justify;
+            margin-left: 10rem;
+            text-decoration: underline;
+        }
+        p{
+            font-size: 20px;
+            font-family:'Bree Serif', serif;
+            margin-top: 3rem;
+            text-align: justify;
+            margin-left: 10rem;
+           
+        }
+        
+        
+        .img{
+            text-align: center;
+        }
+
+        .footer-section{
+            width: 100%;
+            float: left;
+            padding-top: 25px;
+            padding-bottom: 15px;
+            background: #b13d39;
+            margin-bottom: 2rem;
+            }
+        .footer-section h3{
+            font-size: 28px;
+            color: #fff;
+            margin-left: 1rem;
+            margin-bottom: 2rem;
+            }
+        .footer-section p{
+            font-size: 18px;
+            line-height: 20px;
+            color: #fff;
+            margin-top: 20px;
+            padding: 0px 30px 0px 0px;
+            margin-left: 1rem;
+            letter-spacing: 0.8px;
+            }
+            .footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-container .footer-about{
+    width: 30vw;
+}
+.footer-container .quick-link{
+    width: 40vw;
+    margin-left: 10rem;
+   
+}
+         .quick-link ul{
+            margin-top: 30px;
+            list-style: none;
+            margin-top: 6rem;
+    margin-left: 5rem;
+    letter-spacing: 0.5px;
+            width: 100%;
+            }
+         .quick-link li{
+            width: 70%;
+            
+            margin-bottom:20px;
+            }
+
+            
+         .logo2 img{
+                height: 11rem;
+                width: 35rem;
+                margin-top: 70px;
+                
+            }
+
+         .quick-link li a{
+            font-size: 14px;
+            color: #fff;
+            text-decoration: none;
+            letter-spacing: 0.5px;
+            } 
+         .copyright{
+            text-align: center;
+            border-top: 1px solid #b3b3b3;
+            margin-top: 30px;
+            padding-top: 20px;
+            color: #fff;
+            }
+            .dropbtn {
+     
+    
+     border: none;
+     cursor: pointer;
+     font-size: 18px;
+     font-family: 'Bree Serif', serif;
+     font-weight: bold;
+     
+   }
+   
+   .dropdown {
+     position: relative;
+     display: inline-block;
+   }
+   
+   .dropdown-content {
+     display: none;
+     position: absolute;
+     min-width: 160px;
+      z-index: 1;
+      background-color:rgb(248, 248, 237);
+   }
+   
+   .dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+   }
+   
+   .dropdown-content a:hover {background-color: #f1f1f1}
+   
+   .dropdown:hover .dropdown-content {
+     display: block;
+   }
+
+    </style>
+</head>
+<body>
+    <div class="sticky">
+
+        <div class="header-top">
+            <div class="container" style="display: flex;justify-content: space-between; align-items: center;">
+                    <ul class="header-left">
+                        <li><a href="#"><i class="fa fa-phone"></i><span>123456</span></a></li>
+                        <li><a href="#"><i class="fa fa-envelope-o"></i><span>info@yourmail.com</span></a></li> 
+                        </ul>
+                        <ul class="header-left">
+                            <li><a href="https://www.facebook.com/jitnashik/"><i class="fa fa-facebook"></i></a></li>
+                             <li><a href="https://www.instagram.com/jesitmrn/""><i class="fa fa-instagram"></i></a></li>
+                              <li><a href="https://www.youtube.com/@JITNASHIK-xo7su"><i class="fa fa-youtube-play"></i></a></li>
+                               <li><a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                </div>
+                </div>
+                <div class="white">
+                    <div class="container">
+                        <div class="header-nenu" style="display: flex; justify-content: space-between;">
+                            <img src="jit_logo-removebg-preview.png">
+                            <ul>
+                                <li> <a href="index.html">HOME</a></li>
+                                <li> <a href="aboutus.html">ABOUT JIT</a></li>
+                               
+                                <div class="dropdown">
+                                    <li class="dropbtn">ADMISSION</li>
+                                    <div class="dropdown-content">
+                                    <a href="firstyear.html">First Year</a>
+                                    <a href="secondyear.html">Direct Second Year</a>
+                                    <a href="registration.html">Registration</a>
+                                    
+                                    </div>
+                                  </div>
+                                <li> <a href="gallery.html">GALLERY</a></li>
+                                <li> <a href="index.html">DEPARTMENT</a></li>
+                                <li> <a href="placement.html">T&P</a></li>
+                                <li><a href="contactus.html">CONTACT US</a></li>
+                                <li> <a href="registration.html">REGISTER</a></li>
+                            </ul>
+                           <div class="logo"> <img src="B++.png">
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+      
+                <div class="contener">
+    <h1>Institute Vision and Mission</h1>
+    <h3>vision</h3>
+    <p>To provide quality education and training to produce the competent engineers and researchers.</p>
+    <h3>Mission</h3>
+    <p>  To impart knowledge and skill based education in collaboration with Industry, Academia and Research Organization.<br>
+        To undertake collaborative environment friendly projects to bring Environment Consciousness.<br >
+        To implement the advanced technology to benefit the society.</p>
+</div><br><br>
+<h1>Why JIT?</h1><br><br>
+          <div class="img"><img src="img-4.jpg" alt="">
+ 
+         <p>Jawahar Education Society’s Institute of Technology,Management & Research (JIT,Nashik) established in 2012, is striving hard for betterment <br>of their students in this competitive world.
+
+            JIT is functioning proactively to provide the best environment to engineering students in terms of <br>academics, industry oriented trainings, sports, co-curricular & extracurricular activities, cultural activities, various competitions, etc to create  true  <br>aesthetically sensitive, socially committed and technologically competent engineers.
+            
+            Academics at JIT,Nashik is disciplined and well conducted<br> under the strict supervision of Hon. Principal Dr.M.V.Bhatkar, and all Head of the Departments.</p>
+            </div>
+           <br><br>
+          
+           <div class="footer-section">
+            <div class="container footer-container">
+                <div class="footer-about">
+                    <h3>About College</h3>
+                    <p>Jawahar Education Society brings quality engineering education to Nashik, with the establishment of Jawahar Education Society's Institute of Technology, Management & Research, Nashik popularly known as JIT, Nashik.</p>
+                    
+                </div>
+                <div class=" quick-link">
+               
+                        <ul>
+                     <li><a href=""><i class="fa fa-map-marker"></i> JIT Nashik,Gangapur Road,Nashik</a></li>
+                     <li><a href=""><i class="fa fa-phone"></i>Call: 0253 2970077,   0253 2970078<br>
+                                Fax: 0253 2970078 ,   9022025101</a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i>mailto:principaljitnashik@gmail.com</a></li>
+                    <li><a href="https://www.facebook.com/jitnashik/"><i class="fa fa-facebook"></i> JIT Facebook</a></li>
+                            <li><a href="https://www.youtube.com/@JITNASHIK-xo7su"><i class="fa fa-youtube"></i>JIT Youtube</a></li>
+                            <li><a href="https://www.instagram.com/jesitmrn/"><i class="fa fa-instagram"></i>JIT Instagram</a></li>
+        
+                        </ul>
+                </div>
+                <div class="width-33">
+                    
+                   <div class="logo2"><img src="jit-white-logo.png" alt=""></div></div>
+                   
+                </div>
+            </div>
+            <div class="copyright">Copyright @ 2023 All Copyright dezven.com</div>
+         </div>
+ 
+                 
+    
+        </body>
+</html>
